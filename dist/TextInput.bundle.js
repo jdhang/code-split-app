@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{33:function(e,n,a){"use strict";a.r(n);var t=a(1),p=a.n(t),r=a(0),o=a.n(r),l=function(e){var n=e.type,a=e.value,t=e.onChange,r=e.placeholder;return p.a.createElement("input",{type:n,value:a,onChange:t,placeholder:r})};l.propTypes={type:o.a.string,value:o.a.string,placeholder:o.a.string,onChange:o.a.func},l.defaultProps={type:"text",value:""},n.default=l}}]);
+//# sourceMappingURL=TextInput.bundle.js.map

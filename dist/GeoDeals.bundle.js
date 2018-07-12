@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{37:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var u=function(e){return e&&e.__esModule?e:{default:e}}(t(1));n.default=function(){return[0,1,2,3,4,5].map(function(e){return u.default.createElement("div",null,"Deal ","#"+(e+1))})}}}]);
+//# sourceMappingURL=GeoDeals.bundle.js.map

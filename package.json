@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./tools/srcServer.js",
+    "start": "npm run insertConfig && node ./tools/server.js",
+    "insertConfig": "node ./tools/insertConfig.js",
+    "start:dev": "node ./tools/srcServer.js",
+    "build": "webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,10 +23,12 @@
     "babel-preset-react": "^6.24.1",
     "compression": "^1.7.2",
     "cors": "^2.8.4",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.15.1",
     "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
     "webpack-dev-middleware": "^3.1.3",
     "webpack-hot-middleware": "^2.22.2"
   },
