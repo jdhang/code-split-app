@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Loadable from 'react-loadable';
 // import Header from './components/Header';
 // import Widget from './components/Widget';
@@ -63,6 +63,25 @@ class App extends Component {
           : null
         }
         <button onClick={this.toggleWidget}>Toggle Widget</button>
+        {
+          window._FPSettings
+          ? (
+            <Fragment>
+              <h4>Settings</h4>
+              <div>
+                {
+                  window._FPSettings.enableSetting2
+                  ? (
+                    <div><strong>setting1:</strong> {window._FPSettings.setting1}</div>
+                  )
+                  : 'no bueno'
+                }
+              </div>
+              <div><strong>testSetting3:</strong> {window._FPSettings.testSetting3}</div>
+            </Fragment>
+          )
+          : null
+        }
         <RecentSearchSection />
         <GeoDeals />
         <Footer />
